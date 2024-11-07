@@ -1,5 +1,5 @@
 ﻿
-public class Saldo
+public class Conta
 {
     private double saldo;
     public void SetSaldo(double s)
