@@ -1,2 +1,8 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+Saldo acont = new Saldo();
+
+Console.WriteLine("Insira um valor");
+double s = Convert.ToDouble(Console.ReadLine());
+
+
+acont.SetSaldo(s);
