@@ -4,17 +4,24 @@ public class Conta
     private double saldo;
     public void SetSaldo(double s)
     {
-        if (s >= 0)
+        try
+        {
+            if (s >= 0)
 
-        {
-           saldo  = s;
+            {
+                saldo = s;
+            }
+            else
+            {
+                throw new Exception("O saldo não pode ser negativo");
+
+            }
         }
-        else
+        catch (Exception ex)
         {
-            Console.WriteLine("saldo incorreto");
+            throw new Exception(ex.Message);
         }
+
     }
-
 }
-
 

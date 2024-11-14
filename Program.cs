@@ -1,8 +1,17 @@
 ﻿
-Conta acont = new Conta();
 
-Console.WriteLine("Insira um valor");
-double s = Convert.ToDouble(Console.ReadLine());
+try
+{
+    Conta c = new Conta();
+    c.SetSaldo(-68);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(ex.Message);
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
 
+            
 
-acont.SetSaldo(s);
+        
+        
+     
